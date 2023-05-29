@@ -1,0 +1,327 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    font-family: Abel;
+    font-size: 101%;
+    color: #565656;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+h1, h2, h4, h5, h6, label, button{
+    font-family: Oswald;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 800%;
+}
+
+h2{
+    font-size: 500%;
+}
+
+h3{
+    font-size: 300%;
+}
+
+h4{
+    font-size: 250%;
+}
+
+h5{
+    font-size: 150%;
+}
+
+h6, label, h4 + p {
+    font-size: 110%;
+}
+
+#skill, #contact{
+    background-color: #A3B6BB;
+}
+
+/* header */
+.js-to-Scroll {
+	position: relative;
+	top: 55px;
+	width: 31px;
+	height: 18px;
+	left: 50%;
+	margin: 0 0 0 -15px;
+	-o-transition: 0.25s;
+	-webkit-transition: 0.25s;
+	transition: 0.25s;
+}
+
+.js-to-Scroll:hover {
+	bottom: 60px;		
+}
+
+.scroll__icon {
+    outline: none;
+}
+.scroll__icon svg {
+    width: 31px;
+    height: 18px;
+    fill: #ffffff;
+    -o-transition: 0.25s;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;		  
+}
+
+.js-to-Scroll:hover svg {
+	fill: #C88A65;
+}
+
+.scrolled {
+    background-image: linear-gradient(to right,rgba(163,182,187, 0.7), rgba(192, 194, 196, 0.7));
+}
+
+.navbar-expand-sm .navbar-nav .nav-link{
+    padding: 10px 20px;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link.active{
+    color: #C88A65;
+    border-bottom: 3px solid #C88A65;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* home */
+#home{
+    height: 100vh;
+    min-height: 700px;
+    background-image: linear-gradient(to bottom,rgba(140, 140, 140, 0.3), rgba(0, 0, 0, 0.3)),url('assets/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 80%;
+}
+
+.banner-text{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* about */
+#about .col-7{
+    margin: auto;
+}
+
+.profile{
+    border: 10px solid #A3B6BB;
+}
+
+.profile img{
+    position: relative;
+    top: -20px;
+    left: -20px;
+}
+
+.progress{
+    border-radius: 1rem;
+}
+
+.progress-bar {
+    background-color: #C88A65;
+    border-radius: 1rem;
+}
+
+@keyframes animateProgressBar {
+    0% { width: 0%; }
+}
+
+.progress-bar-animate {
+    animation: animateProgressBar 5s forwards;
+}
+
+#skill *{
+    color: #ffffff;
+    overflow: visible;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 2rem;
+}
+
+.carousel-control-next:hover, .carousel-control-prev:hover {
+    width: 2rem;
+    transform: scale(1.1);
+}
+
+.carousel-indicators {
+    margin-bottom: 1rem;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: #C88A65;
+}
+
+.skillbox{
+    background-color: #8498A5;
+    position: relative;
+    top: -110px;
+    padding: 60px !important;
+}
+
+.skillbox hr{
+    color:#A3B6BB !important;
+    width: 30%;
+    height: 3px;
+    background: #A3B6BB;
+    margin-left: 0;
+}
+
+.badge {
+    background-color:#565656 !important;
+    font-weight: 100 !important;
+}
+
+/* project */
+.projectList  img {
+    object-fit: cover; 
+    object-position: 50% top;
+    height: 300px;
+}
+
+.projectList .img-center {
+    height: 608px;
+}
+
+.project-container:hover .overlay{
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+}
+  
+.image {
+    width: 100%;
+    height: auto;
+}
+  
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #C88A65;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    opacity: 0.9;
+}
+  
+.container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+  
+.title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 1px solid #ffffff;
+}
+
+.button:hover {
+    border: 1px solid #ffffff;
+}
+
+/* project details */
+.carousel-inner img{
+    object-fit: cover; 
+    object-position: 50% top;
+    height: 250px;
+}
+
+.techbadge{
+    background-color: #A3B6BB!important;
+}
+
+/* contact */
+textarea{
+    resize: none;
+}
+
+.btn{
+    background: #C88A65;
+    color: #ffffff;
+    --bs-btn-border-width: 0px;
+    --bs-btn-border-radius: 2rem;
+}
+
+.btn:hover{
+    background: #C88A65;
+    color: #ffffff;
+    font-size: 110%;
+    --bs-btn-border-width: 0px;
+}
+
+#contact a{
+    color: #565656;
+    font-weight: bold;
+}
+
+#contact a:hover{
+    color: #565656;
+    font-size: 120%;
+}
+
+/* footer */
+footer{
+    background-color: #8498A5;
+}
+
+footer *{
+    color: #ffffff;
+}
+
+footer p{
+    padding: 20px 100px 0px 0px;
+}
+
+i{
+    font-size: 120%;
+    padding: 20px 20px 0px 0px;
+}
+
+hr{
+    width: 95%;
+    margin: auto;
+}
+
+footer a{
+    font-weight: bold;
+}
+
+footer a:hover{
+    color: #ffffff;
+    font-size: 120%;
+}
